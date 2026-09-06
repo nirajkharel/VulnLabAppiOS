@@ -34,7 +34,7 @@ For dynamic analysis with Frida, install on a jailbroken device running frida-se
 
 ```bash
 # spawn and attach
-frida -U -f com.vulnlab.iosapp --no-pause -l your-script.js
+frida -U -f com.vulnlab.iosapp -l your-script.js
 ```
 
 ---
