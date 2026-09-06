@@ -2,7 +2,7 @@
 
 An intentionally vulnerable iOS application for learning and practising iOS mobile security testing. Every vulnerability is deliberately introduced — each class carries a comment explaining what is broken, why it matters, and what the fix looks like.
 
-Companion to the [nirajkharel.github.io](https://nirajkharel.github.io) iOS blog series.
+Companion to the [iOS blog](https://nirajkharel.com.np/categories/ios/) series.
 
 ---
 
