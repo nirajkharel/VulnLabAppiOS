@@ -1,0 +1,440 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AA0000000000000000000019 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000B /* AppDelegate.swift */; };
+		AA000000000000000000001A /* DetectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000D /* DetectionViewController.swift */; };
+		AA000000000000000000001B /* BiometricViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000E /* BiometricViewController.swift */; };
+		AA000000000000000000001C /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000000F /* CoreDataViewController.swift */; };
+		AA000000000000000000001D /* CryptoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000010 /* CryptoViewController.swift */; };
+		AA000000000000000000001E /* DeepLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000011 /* DeepLinkViewController.swift */; };
+		AA000000000000000000001F /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000012 /* LoginViewController.swift */; };
+		AA0000000000000000000020 /* NetworkCacheViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000013 /* NetworkCacheViewController.swift */; };
+		AA0000000000000000000021 /* NetworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000014 /* NetworkViewController.swift */; };
+		AA0000000000000000000022 /* OAuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000015 /* OAuthViewController.swift */; };
+		AA0000000000000000000023 /* SerializationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000016 /* SerializationViewController.swift */; };
+		AA0000000000000000000024 /* ShareViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000017 /* ShareViewController.swift */; };
+		AA0000000000000000000025 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000018 /* WebViewController.swift */; };
+		AA0000000000000000000031 /* StoredCredentialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000030 /* StoredCredentialViewController.swift */; };
+		AA0000000000000000000033 /* FileStorageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000032 /* FileStorageViewController.swift */; };
+		AA0000000000000000000035 /* SQLiteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000034 /* SQLiteViewController.swift */; };
+		AA0000000000000000000036 /* VulnBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000037 /* VulnBaseViewController.swift */; };
+		AA0000000000000000000038 /* MainMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA0000000000000000000039 /* MainMenuViewController.swift */; };
+		AA000000000000000000003A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA000000000000000000003B /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AA000000000000000000000A /* VulnLabApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VulnLabApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AA000000000000000000000B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AA000000000000000000000C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA000000000000000000000D /* DetectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetectionViewController.swift; sourceTree = "<group>"; };
+		AA000000000000000000000E /* BiometricViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BiometricViewController.swift; sourceTree = "<group>"; };
+		AA000000000000000000000F /* CoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
+		AA0000000000000000000010 /* CryptoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CryptoViewController.swift; sourceTree = "<group>"; };
+		AA0000000000000000000011 /* DeepLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkViewController.swift; sourceTree = "<group>"; };
+		AA0000000000000000000012 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		AA0000000000000000000013 /* NetworkCacheViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCacheViewController.swift; sourceTree = "<group>"; };
+		AA0000000000000000000014 /* NetworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkViewController.swift; sourceTree = "<group>"; };
+		AA0000000000000000000015 /* OAuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuthViewController.swift; sourceTree = "<group>"; };
+		AA0000000000000000000016 /* SerializationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SerializationViewController.swift; sourceTree = "<group>"; };
+		AA0000000000000000000017 /* ShareViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShareViewController.swift; sourceTree = "<group>"; };
+		AA0000000000000000000018 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		AA0000000000000000000030 /* StoredCredentialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoredCredentialViewController.swift; sourceTree = "<group>"; };
+		AA0000000000000000000032 /* FileStorageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileStorageViewController.swift; sourceTree = "<group>"; };
+		AA0000000000000000000034 /* SQLiteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SQLiteViewController.swift; sourceTree = "<group>"; };
+		AA0000000000000000000037 /* VulnBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VulnBaseViewController.swift; sourceTree = "<group>"; };
+		AA0000000000000000000039 /* MainMenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenuViewController.swift; sourceTree = "<group>"; };
+		AA000000000000000000003B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AA0000000000000000000028 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AA0000000000000000000002 = {
+			isa = PBXGroup;
+			children = (
+				AA0000000000000000000003 /* VulnLabApp */,
+				AA0000000000000000000004 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000003 /* VulnLabApp */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000000B /* AppDelegate.swift */,
+				AA000000000000000000000C /* Info.plist */,
+				AA0000000000000000000037 /* VulnBaseViewController.swift */,
+				AA0000000000000000000039 /* MainMenuViewController.swift */,
+				AA000000000000000000003B /* Assets.xcassets */,
+				AA0000000000000000000005 /* Detection */,
+				AA0000000000000000000006 /* ViewControllers */,
+				AA0000000000000000000007 /* Models */,
+				AA0000000000000000000008 /* Networking */,
+				AA0000000000000000000009 /* Storage */,
+			);
+			path = VulnLabApp;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000004 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000000A /* VulnLabApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000005 /* Detection */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000000D /* DetectionViewController.swift */,
+			);
+			path = Detection;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000006 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				AA000000000000000000000E /* BiometricViewController.swift */,
+				AA000000000000000000000F /* CoreDataViewController.swift */,
+				AA0000000000000000000010 /* CryptoViewController.swift */,
+				AA0000000000000000000011 /* DeepLinkViewController.swift */,
+				AA0000000000000000000012 /* LoginViewController.swift */,
+				AA0000000000000000000013 /* NetworkCacheViewController.swift */,
+				AA0000000000000000000014 /* NetworkViewController.swift */,
+				AA0000000000000000000015 /* OAuthViewController.swift */,
+				AA0000000000000000000016 /* SerializationViewController.swift */,
+				AA0000000000000000000017 /* ShareViewController.swift */,
+				AA0000000000000000000018 /* WebViewController.swift */,
+				AA0000000000000000000030 /* StoredCredentialViewController.swift */,
+				AA0000000000000000000032 /* FileStorageViewController.swift */,
+				AA0000000000000000000034 /* SQLiteViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000007 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000008 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		AA0000000000000000000009 /* Storage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Storage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AA0000000000000000000029 /* VulnLabApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AA000000000000000000002B /* Build configuration list for PBXNativeTarget "VulnLabApp" */;
+			buildPhases = (
+				AA0000000000000000000026 /* Sources */,
+				AA0000000000000000000028 /* Frameworks */,
+				AA0000000000000000000027 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VulnLabApp;
+			productName = VulnLabApp;
+			productReference = AA000000000000000000000A /* VulnLabApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AA0000000000000000000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					AA0000000000000000000029 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = AA000000000000000000002A /* Build configuration list for PBXProject "VulnLabApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AA0000000000000000000002;
+			productRefGroup = AA0000000000000000000004 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AA0000000000000000000029 /* VulnLabApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AA0000000000000000000027 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA000000000000000000003A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AA0000000000000000000026 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AA0000000000000000000019 /* AppDelegate.swift in Sources */,
+				AA000000000000000000001A /* DetectionViewController.swift in Sources */,
+				AA000000000000000000001B /* BiometricViewController.swift in Sources */,
+				AA000000000000000000001C /* CoreDataViewController.swift in Sources */,
+				AA000000000000000000001D /* CryptoViewController.swift in Sources */,
+				AA000000000000000000001E /* DeepLinkViewController.swift in Sources */,
+				AA000000000000000000001F /* LoginViewController.swift in Sources */,
+				AA0000000000000000000020 /* NetworkCacheViewController.swift in Sources */,
+				AA0000000000000000000021 /* NetworkViewController.swift in Sources */,
+				AA0000000000000000000022 /* OAuthViewController.swift in Sources */,
+				AA0000000000000000000023 /* SerializationViewController.swift in Sources */,
+				AA0000000000000000000024 /* ShareViewController.swift in Sources */,
+				AA0000000000000000000025 /* WebViewController.swift in Sources */,
+				AA0000000000000000000031 /* StoredCredentialViewController.swift in Sources */,
+				AA0000000000000000000033 /* FileStorageViewController.swift in Sources */,
+				AA0000000000000000000035 /* SQLiteViewController.swift in Sources */,
+				AA0000000000000000000036 /* VulnBaseViewController.swift in Sources */,
+				AA0000000000000000000038 /* MainMenuViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		AA000000000000000000002C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_CYCLE = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AA000000000000000000002D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_CYCLE = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AA000000000000000000002E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = XXXXXXXXXX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = VulnLabApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vulnlab.iosapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AA000000000000000000002F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = XXXXXXXXXX;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = VulnLabApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = NO;
+				INFOPLIST_KEY_UILaunchScreen_Generation = NO;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vulnlab.iosapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AA000000000000000000002A /* Build configuration list for PBXProject "VulnLabApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA000000000000000000002C /* Debug */,
+				AA000000000000000000002D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AA000000000000000000002B /* Build configuration list for PBXNativeTarget "VulnLabApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA000000000000000000002E /* Debug */,
+				AA000000000000000000002F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AA0000000000000000000001 /* Project object */;
+}

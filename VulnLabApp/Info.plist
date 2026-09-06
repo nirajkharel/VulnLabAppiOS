@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+    "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  VULN: ios-ats-bypass (blog: ios-ats-bypass.md)
+    NSAppTransportSecurity.NSAllowsArbitraryLoads = true disables ATS for all
+    connections. This was intended as a temporary debug override but shipped
+    to production. Any HTTP connection this app makes is unencrypted and
+    interceptable without a MITM proxy.
+
+  VULN: ios-custom-url-scheme-hijacking (blog: ios-custom-url-scheme-hijacking.md)
+    CFBundleURLSchemes registers "vulnlab://" which is not unique. Any other
+    app can register the same scheme. On iOS the last-installed app wins —
+    or the system shows no chooser at all, silently routing to either app.
+
+  VULN: ios-background-snapshot-leak (blog: ios-background-snapshot-leak.md)
+    UIApplicationExitsOnSuspend = false (default). The app does not override
+    applicationWillResignActive to hide sensitive content, so the system
+    snapshot captures whatever is on screen.
+
+  VULN: ios-universal-link-misconfiguration (blog: ios-universal-link-misconfiguration.md)
+    Associated domains registered but the apple-app-site-association file
+    either does not exist, has wrong team ID, or does not match the bundle ID.
+    iOS falls back to opening the URL in Safari — defeating the security
+    model and enabling redirect attacks.
+-->
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+    <key>CFBundleDisplayName</key>
+    <string>VulnLabApp</string>
+    <key>CFBundleExecutable</key>
+    <string>VulnLabApp</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.vulnlab.iosapp</string>
+    <key>CFBundleName</key>
+    <string>VulnLabApp</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+
+    <!-- VULN: ios-ats-bypass — ATS disabled for all domains -->
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+        <!-- The domain exceptions below are redundant due to NSAllowsArbitraryLoads
+             but demonstrate the per-domain exception pattern too -->
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>api.vulnlabapp.example.com</key>
+            <dict>
+                <key>NSExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+                <key>NSExceptionMinimumTLSVersion</key>
+                <string>TLSv1.0</string>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+            </dict>
+        </dict>
+    </dict>
+
+    <!-- VULN: ios-custom-url-scheme-hijacking -->
+    <key>CFBundleURLTypes</key>
+    <array>
+        <dict>
+            <key>CFBundleURLName</key>
+            <string>com.vulnlab.iosapp</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <string>vulnlab</string>
+            </array>
+        </dict>
+        <dict>
+            <key>CFBundleURLName</key>
+            <string>OAuth Callback</string>
+            <key>CFBundleURLSchemes</key>
+            <array>
+                <!-- VULN: same scheme as in Android app — any app can claim it -->
+                <string>vulnlaboauth</string>
+            </array>
+        </dict>
+    </array>
+
+    <!-- UILaunchScreen replaces UILaunchStoryboardName — no storyboard file needed (iOS 14+) -->
+    <key>UILaunchScreen</key>
+    <dict/>
+
+    <!-- VULN: ios-application-backup-analysis
+         NSApplicationIsBackupAllowed is absent (defaults to true).
+         idevicebackup2 backup --full . captures Library/Preferences/<bundle>.plist
+         which contains session_token and api_key in plaintext from NSUserDefaults.
+         Fix: add <key>NSApplicationIsBackupAllowed</key><false/> to exclude the
+         app data container from iTunes / Finder backups. -->
+</dict>
+</plist>

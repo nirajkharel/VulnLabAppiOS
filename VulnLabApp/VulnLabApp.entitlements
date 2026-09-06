@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+  VULN: ios-entitlements-keychain-group-sharing
+    keychain-access-groups uses a wildcard suffix: $(AppIdentifierPrefix)com.company.*
+    Any app in the same provisioning profile whose team prefix matches can call
+    SecItemCopyMatching with kSecAttrAccessGroup = "TEAM.com.company.*" and
+    enumerate all Keychain items VulnLabApp has stored, including api_key and session_token.
+
+    Fix: use a fully qualified group name with no wildcard:
+      $(AppIdentifierPrefix)com.vulnlab.iosapp.shared
+-->
+<plist version="1.0">
+<dict>
+    <!-- VULN: wildcard allows any app with same team prefix to read VulnLabApp keychain items -->
+    <key>keychain-access-groups</key>
+    <array>
+        <string>$(AppIdentifierPrefix)com.company.*</string>
+    </array>
+
+    <key>com.apple.developer.associated-domains</key>
+    <array>
+        <string>applinks:app.vulnlabapp.example.com</string>
+    </array>
+
+    <key>aps-environment</key>
+    <string>production</string>
+
+    <key>com.apple.security.application-groups</key>
+    <array>
+        <string>group.com.vulnlab.iosapp</string>
+    </array>
+</dict>
+</plist>
